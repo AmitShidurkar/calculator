@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="calculator-body">
+    <div id="display">
+    <input type="text" readonly class="anta-regular" id="displayDigit" >
+    </div>
+    <div id="buttons-container">
+    <button class="buttons" onclick="displayValue=''; document.querySelector('#displayDigit').value=displayValue">C</button>
+    <button class="buttons" onclick="displayValue=displayValue+1; document.querySelector('#displayDigit').value=displayValue">1</button>
+    <button class="buttons" onclick="displayValue=displayValue+2; document.querySelector('#displayDigit').value=displayValue">2</button>
+    <button class="buttons" onclick="displayValue=displayValue+'+'; document.querySelector('#displayDigit').value=displayValue"">+</button>
+    <button class="buttons" onclick="displayValue=displayValue+3; document.querySelector('#displayDigit').value=displayValue">3</button>
+    <button class="buttons" onclick="displayValue=displayValue+4; document.querySelector('#displayDigit').value=displayValue">4</button>
+    <button class="buttons" onclick="displayValue=displayValue+'-'; document.querySelector('#displayDigit').value=displayValue;">-</button>
+    <button class="buttons" onclick="displayValue=displayValue+5;  document.querySelector('#displayDigit').value=displayValue">5</button>
+    <button class="buttons" onclick="displayValue=displayValue+6; document.querySelector('#displayDigit').value=displayValue">6</button>
+    <button class="buttons" onclick="displayValue=displayValue+'*'; document.querySelector('#displayDigit').value=displayValue">*</button>
+    <BUTTON class="buttons" onclick="displayValue=displayValue+7;document.querySelector('#displayDigit').value=displayValue">7</BUTTON>
+    <BUTTON class="buttons" onclick="displayValue=displayValue+8;document.querySelector('#displayDigit').value=displayValue">8</BUTTON>
+    <BUTTON class="buttons" onclick="displayValue=displayValue+'/';document.querySelector('#displayDigit').value=displayValue">/</BUTTON>
+    <BUTTON class="buttons" onclick="displayValue= eval(displayValue);document.querySelector('#displayDigit').value=displayValue">=</BUTTON>
+    <BUTTON class="buttons" onclick="displayValue=displayValue+9;document.querySelector('#displayDigit').value=displayValue">9</BUTTON>
+    <BUTTON class="buttons" onclick="displayValue=displayValue+0;document.querySelector('#displayDigit').value=displayValue">0</BUTTON>
+    <BUTTON class="buttons" onclick="displayValue=displayValue=displayValue+'.';document.querySelector('#displayDigit').value=displayValue">.</BUTTON>
+    </div>
+</div>
+
+<script>
+  let displayValue = ""
+  document.querySelector('#displayDigit').value=displayValue;
+</script>
+</body>
+</html>
